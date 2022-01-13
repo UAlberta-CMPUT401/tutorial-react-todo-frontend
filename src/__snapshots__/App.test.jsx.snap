@@ -1,0 +1,82 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Check App renders or not 1`] = `
+<div
+  className="container-fluid my-5"
+>
+  <div
+    className="row"
+  >
+    <div
+      className="col-sm-6 mx-auto text-white shadow-lg p-3 main-center"
+    >
+      <h2
+        className="text-center"
+      >
+         Today's Plan 
+      </h2>
+      <div
+        className="container-fluid"
+      >
+        <div
+          className="row"
+        >
+          <div>
+            <div
+              className="col-9"
+            >
+              <input
+                className="form-control"
+                onChange={[Function]}
+                placeholder="Write Title Here"
+                type="text"
+                value=""
+              />
+            </div>
+            <div
+              className="col-9 mt-5"
+            >
+              <input
+                className="form-control"
+                onChange={[Function]}
+                placeholder="Write Description Here"
+                type="text"
+                value=""
+              />
+            </div>
+            <div>
+              <span>
+                Completed:
+              </span>
+              <input
+                className="mt-5"
+                onChange={[Function]}
+                placeholder="Write Description Here"
+                type="checkbox"
+                value={false}
+              />
+            </div>
+          </div>
+          <div
+            className="col-2 addContainer"
+          >
+            <button
+              className="btn btn-warning px-5 font-weight-bold"
+              onClick={[Function]}
+            >
+              Add
+            </button>
+          </div>
+        </div>
+        <div
+          className="conatiner"
+        >
+          <ul
+            className="list-unstyled row m-5"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
