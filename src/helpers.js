@@ -42,4 +42,3 @@ export function DeleteRESTCaller(url) {
             console.error('There was an error:', error);
         });
 }
-// export default RESTCaller;

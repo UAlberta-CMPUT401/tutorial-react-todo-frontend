@@ -33,16 +33,6 @@ class App extends Component {
     this.setState({items: response})
   }
 
-  // getData = async(url) => {
-  //   return await GetRESTCaller(url);
-  // }
-
-  // constructor() {
-  //   const url = `https://401-todo-api.azurewebsites.net/api/todo/`;
-  //   const response = this.getData(url);
-  //   this.setState({items: response})
-  // }
-
   handleTitleChange = e => {
     this.setState({ title: e.target.value });
   }
@@ -118,9 +108,6 @@ class App extends Component {
                     })
                   }
                 </ul>
-                {/* <ul className="list-unstyled row m-5">
-                  <Plan p={this.state.items} sendData={this.handleDelete} />
-                </ul> */}
               </div>
             </div>
 
