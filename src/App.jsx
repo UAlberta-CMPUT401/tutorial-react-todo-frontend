@@ -28,7 +28,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const url = `https://cmput401-todo.herokuapp.com/api/todo/`;
+    const url = `http://68.183.196.220:8000/api/todo/`;
     const response = await GetRESTCaller(url);
     this.setState({items: response})
   }
@@ -45,7 +45,7 @@ class App extends Component {
 
   handleAdd = async (e)  => {
     if (this.state.title !== "") {
-      const addUrl = `https://cmput401-todo.herokuapp.com/api/todo/`;
+      const addUrl = `http://68.183.196.220:8000/api/todo/`;
       const headers = {
         'Content-Type': 'application/json'
         };
@@ -69,7 +69,7 @@ class App extends Component {
     console.log("Newitems", items);
     this.setState({ items: items });
 
-    const deleteUrl = `https://cmput401-todo.herokuapp.com/api/todo/${id}/?format=api`;
+    const deleteUrl = `http://68.183.196.220:8000/api/todo/${id}/?format=api`;
     await DeleteRESTCaller(deleteUrl);
   }
   render() {
