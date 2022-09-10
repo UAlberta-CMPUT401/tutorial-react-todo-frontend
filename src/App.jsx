@@ -28,7 +28,7 @@ class App extends Component {
   }
 
   async componentDidMount() {
-    const url = `https://401-todo-api.azurewebsites.net/api/todo/`;
+    const url = `https://cmput401-todo.herokuapp.com/api/todo/`;
     const response = await GetRESTCaller(url);
     this.setState({items: response})
   }
@@ -45,7 +45,7 @@ class App extends Component {
 
   handleAdd = async (e)  => {
     if (this.state.title !== "") {
-      const addUrl = `https://401-todo-api.azurewebsites.net/api/todo/`;
+      const addUrl = `https://cmput401-todo.herokuapp.com/api/todo/`;
       const headers = {
         'Content-Type': 'application/json'
         };
@@ -69,7 +69,7 @@ class App extends Component {
     console.log("Newitems", items);
     this.setState({ items: items });
 
-    const deleteUrl = `https://401-todo-api.azurewebsites.net/api/todo/${id}/?format=api`;
+    const deleteUrl = `https://cmput401-todo.herokuapp.com/api/todo/${id}/?format=api`;
     await DeleteRESTCaller(deleteUrl);
   }
   render() {
